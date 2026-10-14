@@ -1,0 +1,42 @@
+.section--prices { padding-bottom: 0; }
+
+.price-grid { display: grid; gap: 2.5rem; }
+@media (min-width: 960px) { .price-grid { grid-template-columns: 1.35fr 1fr; gap: 3.5rem; align-items: start; } }
+
+.pricelist { border-top: 1px solid var(--color-line); }
+.item label {
+  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem;
+  padding: 1rem 0.6rem; border-bottom: 1px solid var(--color-line); cursor: pointer;
+  transition: background 0.15s var(--ease);
+}
+.item label:hover { background: rgba(241, 232, 216, 0.04); }
+.item label:has(input:checked) { background: rgba(227, 19, 27, 0.1); }
+
+.item__box { position: relative; width: 1.4rem; height: 1.4rem; border: 2px solid var(--color-muted); border-radius: 4px; transition: background 0.15s var(--ease), border-color 0.15s var(--ease); }
+.item__box::after {
+  content: ""; position: absolute; left: 3px; top: 3px; width: 0.7rem; height: 0.4rem;
+  border-left: 3px solid #fff; border-bottom: 3px solid #fff;
+  transform: rotate(-45deg) scale(0); transition: transform 0.15s var(--ease);
+}
+input:checked + .item__box { background: var(--color-red); border-color: var(--color-red); }
+input:checked + .item__box::after { transform: rotate(-45deg) scale(1); }
+input:focus-visible + .item__box { outline: 3px solid var(--color-gold); outline-offset: 3px; }
+
+.item__name { font-weight: 700; }
+.item__name small { display: block; font-weight: 500; font-size: 0.85rem; color: var(--color-muted); }
+
+.item__price {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; line-height: 1;
+  padding: 0.3rem 0.9rem; background: var(--color-red); color: #fff;
+  clip-path: polygon(0 14%, 8% 0, 92% 6%, 100% 22%, 96% 88%, 86% 100%, 10% 94%, 2% 80%);
+}
+
+.extras { display: grid; gap: 1.5rem; }
+.techpark { display: block; border: 1px solid var(--color-gold); border-radius: var(--radius-card); padding: 1.3rem; background: linear-gradient(160deg, rgba(200, 167, 98, 0.12), rgba(200, 167, 98, 0.02)); cursor: pointer; }
+.techpark label { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center; cursor: pointer; }
+.techpark strong { display: block; font-family: var(--font-display); font-size: 1.6rem; text-transform: uppercase; color: var(--color-gold); line-height: 1.1; }
+.techpark span.techpark__text { color: var(--color-cream); font-size: 0.95rem; }
+.techpark .item__box { border-color: var(--color-gold); }
+.techpark input:checked + .item__box { background: var(--color-gold); border-color: var(--color-gold); }
+
+.slogan { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); text-transform: uppercase; line-height: 1.1; transform: rotate(-3deg); transform-origin: left; padding-top: 0.5rem; }

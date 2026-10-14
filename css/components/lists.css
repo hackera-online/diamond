@@ -1,0 +1,7 @@
+/* Diamond-shaped bullets */
+.checklist { display: grid; gap: 0.7rem; }
+.checklist li { display: flex; gap: 0.75rem; align-items: baseline; }
+.checklist li::before {
+  content: ""; flex: none; width: 0.55rem; height: 0.55rem; background: var(--color-red);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); transform: translateY(-0.05rem);
+}

@@ -1,0 +1,12 @@
+.contact { background: var(--color-red); color: #fff; }
+.contact__in { display: grid; gap: 2rem; align-items: center; }
+@media (min-width: 860px) { .contact__in { grid-template-columns: 1.2fr 1fr; } }
+.contact h2 { font-size: clamp(2.2rem, 6vw, 4.2rem); }
+.contact__links { display: grid; gap: 0.9rem; font-weight: 700; font-size: 1.1rem; }
+.contact__links a { display: flex; align-items: center; gap: 0.8rem; }
+.contact__links a:hover { text-decoration: underline; }
+.contact .btn--black { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-cream); }
+.contact .btn--black:hover { background: #000; border-color: #000; transform: translateY(-2px); }
+
+.footer { padding-block: 1.5rem; font-size: 0.9rem; color: var(--color-muted); }
+.footer__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; }

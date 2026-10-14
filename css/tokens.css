@@ -1,0 +1,22 @@
+:root {
+  /* Diamond Care brand (from the logo) */
+  --color-ink: #030409;          /* same as the logo background, so it blends in */
+  --color-surface: #0d0e14;
+  --color-surface-2: #14151d;
+  --color-line: rgba(241, 232, 216, 0.14);
+  --color-cream: #f1e8d8;
+  --color-muted: #a9a398;
+  --color-red: #e3131b;
+  --color-red-deep: #a30d13;
+  --color-gold: #c8a762;
+  --color-white: #ffffff;
+
+  --font-display: 'Oswald', 'Arial Narrow', Impact, sans-serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --container-max: 1200px;
+  --header-h: 68px;
+  --radius-btn: 6px;
+  --radius-card: 14px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
