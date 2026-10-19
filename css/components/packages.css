@@ -1,0 +1,22 @@
+/* Два главни пакета един до друг: Basic Wash и Diamond Care Detailing Pack */
+.packs { display: grid; gap: 1.5rem; margin-bottom: clamp(3rem, 7vw, 5rem); }
+@media (min-width: 1000px) { .packs { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; } }
+
+.packs .pack { margin-top: 0; display: flex; flex-direction: column; }
+.packs .pack__title { font-size: clamp(1.7rem, 3.2vw, 2.5rem); }
+.packs .pack__price { font-size: clamp(2.4rem, 5vw, 3.4rem); }
+.packs .pack__cols { grid-template-columns: 1fr; gap: 1.6rem; flex: 1; }
+.packs .pack__pick { margin-top: auto; justify-content: center; }
+
+.pack--basic { border-color: var(--color-red); background: var(--color-surface); }
+.pack--basic .pack__title { color: var(--color-cream); }
+.pack--basic .pack__title .icon { color: var(--color-red); }
+
+/* Допълнителна опция под Basic Wash */
+.pack__addon { padding-bottom: 1.6rem; }
+.pack__addon .pricelist { margin: 0; }
+.pack__hint { margin: .5rem 0 0; font-size: .85rem; color: var(--color-muted); }
+.item:has(input:disabled) { opacity: .45; cursor: not-allowed; }
+.item:has(input:disabled) label { cursor: not-allowed; }
+
+.price-grid__title { font-size: 1.7rem; margin-bottom: 1.2rem; }

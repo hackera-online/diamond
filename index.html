@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diamond Care | Мобилна автомивка и детайлинг на ваш адрес</title>
-  <meta name="description" content="Diamond Care - професионален детайлинг и мобилна автомивка на ваш адрес. Вътрешно, външно и комплексно почистване, пране на салон и Diamond Care Pack за 180€.">
+  <meta name="description" content="Diamond Care - професионален детайлинг и мобилна автомивка на ваш адрес. Basic Wash за 50€, вътрешно и външно почистване, пране на салон и Diamond Care Detailing Pack за 180€.">
   <meta name="theme-color" content="#030409">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Diamond Care | Professional Car Care">
@@ -24,8 +24,10 @@
   <link rel="stylesheet" href="css/components/hero.css">
   <link rel="stylesheet" href="css/components/services.css">
   <link rel="stylesheet" href="css/components/pack.css">
+  <link rel="stylesheet" href="css/components/packages.css">
   <link rel="stylesheet" href="css/components/steps.css">
   <link rel="stylesheet" href="css/components/calculator.css">
+  <link rel="stylesheet" href="css/components/gallery.css">
   <link rel="stylesheet" href="css/components/footer.css">
 
   <script type="application/ld+json">
@@ -66,7 +68,8 @@
       </a>
       <nav class="nav" aria-label="Основна навигация">
         <a href="#prices">Цени</a>
-        <a href="#pack">Diamond Care Pack</a>
+        <a href="#packages">Пакети</a>
+        <a href="#gallery">Галерия</a>
         <a href="#how">Как работим</a>
         <a href="#contact">Контакти</a>
       </nav>
@@ -118,165 +121,203 @@
           <p>Отбележи услугите, които ти трябват, и виж сумата. После ни се обади или изпрати поръчката по SMS.</p>
         </div>
 
+        <div id="packages" class="packs">
+          <article class="pack pack--basic">
+            <div class="pack__head">
+              <h2 class="pack__title">
+                <svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>
+                Basic Wash
+              </h2>
+              <p class="pack__price">50€</p>
+            </div>
+            <div class="pack__cols">
+              <div>
+                <h3 class="brush">Екстериор</h3>
+                <ul class="checklist">
+                  <li>Безконтактно измиване</li>
+                  <li>Вакса</li>
+                  <li>Подсушаване</li>
+                  <li>Дресинг за гумите</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="brush">Интериор</h3>
+                <ul class="checklist">
+                  <li>Обдухване на интериора</li>
+                  <li>Прахосмукиране на интериора</li>
+                  <li>Почистване на стъклата</li>
+                  <li>Ароматизация на купето</li>
+                  <li>Почистване на всички елементи</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pack__addon">
+              <ul class="pricelist">
+                <li class="item">
+                  <label>
+                    <input id="opt-pet" class="calc-item sr-only" type="checkbox" data-name="Животински косми и пясък (към Basic Wash)" data-price="10" disabled>
+                    <span class="item__box" aria-hidden="true"></span>
+                    <span class="item__name">Животински косми и пясък</span>
+                    <span class="item__price">+10€</span>
+                  </label>
+                </li>
+              </ul>
+              <p class="pack__hint">Опцията се включва, когато добавиш Basic Wash.</p>
+            </div>
+            <label class="btn btn--red btn--xl pack__pick">
+              <input id="pkg-basic" class="calc-item sr-only" type="checkbox" data-name="Basic Wash" data-price="50">
+              <span class="pack__off">Добави Basic Wash към поръчката</span>
+              <span class="pack__on">Basic Wash е добавен</span>
+            </label>
+          </article>
+
+          <article id="pack" class="pack">
+            <div class="pack__head">
+              <h2 class="pack__title">
+                <svg class="icon" aria-hidden="true"><use href="#i-diamond"/></svg>
+                Diamond Care Detailing Pack
+              </h2>
+              <p class="pack__price">180€</p>
+            </div>
+            <div class="pack__cols">
+              <div>
+                <h3 class="brush">Екстериор</h3>
+                <ul class="checklist">
+                  <li>Предизмиване на автомобила</li>
+                  <li>Ръчно измиване</li>
+                  <li>Детайлно почистване на гумите и джантите</li>
+                  <li>Вакса</li>
+                  <li>Подсушаване</li>
+                  <li>Дресинг за гумите</li>
+                  <li>Подхранване на външните пластмаси</li>
+                  <li>Хидрофобна защита за стъклата на автомобила</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="brush">Интериор</h3>
+                <ul class="checklist">
+                  <li>Прахосмукиране</li>
+                  <li>Обдухване</li>
+                  <li>Пране на седалките</li>
+                  <li>Импрегниране на интериора</li>
+                  <li>Дълбоко пране на мокета</li>
+                  <li>Детайлно почистване на всички труднодостъпни места</li>
+                  <li>Почистване на стъклата от двете страни</li>
+                  <li>Ароматизиране</li>
+                </ul>
+              </div>
+            </div>
+            <label class="btn btn--gold btn--xl pack__pick">
+              <input class="calc-item sr-only" type="checkbox" data-name="Diamond Care Detailing Pack" data-price="180">
+              <span class="pack__off">Добави пакета към поръчката</span>
+              <span class="pack__on">Пакетът е добавен</span>
+            </label>
+          </article>
+        </div>
+
         <div class="price-grid">
-          <ul class="pricelist">
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Вътрешно" data-price="30">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Вътрешно</span>
-                <span class="item__price">30€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Външно" data-price="25">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Външно</span>
-                <span class="item__price">25€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Комплексно" data-price="50">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Комплексно</span>
-                <span class="item__price">50€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Почистване и подхранване на кожен салон" data-price="90">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Почистване и подхранване на кожен салон</span>
-                <span class="item__price">90€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Пране на мокет" data-price="50">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Пране на мокет</span>
-                <span class="item__price">50€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на вътрешни пластмаси" data-price="10">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Подхранване на вътрешни пластмаси</span>
-                <span class="item__price">10€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на външни пластмаси" data-price="10">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Подхранване на външни пластмаси</span>
-                <span class="item__price">10€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на гумени елементи" data-price="10">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Подхранване на гумени елементи<small>стелки, облицовки и др.</small></span>
-                <span class="item__price">10€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Пране на текстилен салон" data-price="90">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Пране на текстилен салон</span>
-                <span class="item__price">90€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Почистване на релсите на седалките" data-price="15">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Почистване на релсите на седалките</span>
-                <span class="item__price">15€</span>
-              </label>
-            </li>
-          </ul>
+          <div>
+            <h3 class="brush price-grid__title">Единични услуги</h3>
+            <ul class="pricelist">
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Вътрешно" data-price="30">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Вътрешно</span>
+                  <span class="item__price">30€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Външно" data-price="25">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Външно</span>
+                  <span class="item__price">25€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Почистване и подхранване на кожен салон" data-price="90">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Почистване и подхранване на кожен салон</span>
+                  <span class="item__price">90€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Пране на мокет" data-price="50">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Пране на мокет</span>
+                  <span class="item__price">50€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на вътрешни пластмаси" data-price="10">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Подхранване на вътрешни пластмаси</span>
+                  <span class="item__price">10€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на външни пластмаси" data-price="10">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Подхранване на външни пластмаси</span>
+                  <span class="item__price">10€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Подхранване на гумени елементи" data-price="10">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Подхранване на гумени елементи<small>стелки, облицовки и др.</small></span>
+                  <span class="item__price">10€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Пране на текстилен салон" data-price="90">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Пране на текстилен салон</span>
+                  <span class="item__price">90€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Почистване на релсите на седалките" data-price="15">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Почистване на релсите на седалките</span>
+                  <span class="item__price">15€</span>
+                </label>
+              </li>
+            </ul>
+          </div>
 
           <div class="extras">
             <h3 class="brush">Допълнителни</h3>
             <ul class="pricelist">
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Керамична вакса за прозорците" data-price="20">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Керамична вакса за прозорците</span>
-                <span class="item__price">20€</span>
-              </label>
-            </li>
-            <li class="item">
-              <label>
-                <input class="calc-item sr-only" type="checkbox" data-name="Твърда вакса" data-price="50">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="item__name">Твърда вакса</span>
-                <span class="item__price">50€</span>
-              </label>
-            </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Керамична вакса за прозорците" data-price="20">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Керамична вакса за прозорците</span>
+                  <span class="item__price">20€</span>
+                </label>
+              </li>
+              <li class="item">
+                <label>
+                  <input class="calc-item sr-only" type="checkbox" data-name="Твърда вакса" data-price="50">
+                  <span class="item__box" aria-hidden="true"></span>
+                  <span class="item__name">Твърда вакса</span>
+                  <span class="item__price">50€</span>
+                </label>
+              </li>
             </ul>
-
-            <div class="techpark">
-              <label>
-                <input id="techpark" class="sr-only" type="checkbox">
-                <span class="item__box" aria-hidden="true"></span>
-                <span class="techpark__text"><strong>10% отстъпка</strong>за служители на София Тех Парк</span>
-              </label>
-            </div>
 
             <p class="slogan">Чист автомобил = по-добро настроение!</p>
           </div>
         </div>
-
-        <article id="pack" class="pack">
-          <div class="pack__head">
-            <h2 class="pack__title">
-              <svg class="icon" aria-hidden="true"><use href="#i-diamond"/></svg>
-              Diamond Care Pack
-            </h2>
-            <p class="pack__price">180€</p>
-          </div>
-          <div class="pack__cols">
-            <div>
-              <h3 class="brush">Екстериор</h3>
-              <ul class="checklist">
-              <li>Предизмиване на автомобила</li>
-              <li>Ръчно измиване</li>
-              <li>Детайлно почистване на гумите и джантите</li>
-              <li>Вакса</li>
-              <li>Подсушаване</li>
-              <li>Дресинг за гумите</li>
-              <li>Подхранване на външните пластмаси</li>
-              <li>Хидрофобна защита за стъклата на автомобила</li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="brush">Интериор</h3>
-              <ul class="checklist">
-              <li>Прахосмукиране</li>
-              <li>Обдухване</li>
-              <li>Пране на седалките</li>
-              <li>Импрегниране на интериора</li>
-              <li>Дълбоко пране на мокета</li>
-              <li>Детайлно почистване на всички труднодостъпни места</li>
-              <li>Почистване на стъклата от двете страни</li>
-              <li>Ароматизиране</li>
-              </ul>
-            </div>
-          </div>
-          <label class="btn btn--gold btn--xl pack__pick">
-            <input class="calc-item sr-only" type="checkbox" data-name="Diamond Care Pack" data-price="180">
-            <span class="pack__off">Добави пакета към поръчката</span>
-            <span class="pack__on">Пакетът е добавен</span>
-          </label>
-        </article>
       </div>
 
       <div class="calc-bar" aria-live="polite">
@@ -296,6 +337,65 @@
               Обади се
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="gallery-title" class="brush">Галерия</h2>
+          <p>Реални автомобили, реални резултати.</p>
+        </div>
+        <div class="gallery__grid" data-gallery-grid data-step="12">
+          <a class="gallery__item" href="img/gallery/car-01.webp" data-gallery><img src="img/gallery/car-01-thumb.webp" alt="Автомобил след почистване от Diamond Care 1" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-02.webp" data-gallery><img src="img/gallery/car-02-thumb.webp" alt="Автомобил след почистване от Diamond Care 2" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-03.webp" data-gallery><img src="img/gallery/car-03-thumb.webp" alt="Автомобил след почистване от Diamond Care 3" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-04.webp" data-gallery><img src="img/gallery/car-04-thumb.webp" alt="Автомобил след почистване от Diamond Care 4" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-05.webp" data-gallery><img src="img/gallery/car-05-thumb.webp" alt="Автомобил след почистване от Diamond Care 5" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-06.webp" data-gallery><img src="img/gallery/car-06-thumb.webp" alt="Автомобил след почистване от Diamond Care 6" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-07.webp" data-gallery><img src="img/gallery/car-07-thumb.webp" alt="Автомобил след почистване от Diamond Care 7" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-08.webp" data-gallery><img src="img/gallery/car-08-thumb.webp" alt="Автомобил след почистване от Diamond Care 8" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-09.webp" data-gallery><img src="img/gallery/car-09-thumb.webp" alt="Автомобил след почистване от Diamond Care 9" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-10.webp" data-gallery><img src="img/gallery/car-10-thumb.webp" alt="Автомобил след почистване от Diamond Care 10" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-11.webp" data-gallery><img src="img/gallery/car-11-thumb.webp" alt="Автомобил след почистване от Diamond Care 11" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-12.webp" data-gallery><img src="img/gallery/car-12-thumb.webp" alt="Автомобил след почистване от Diamond Care 12" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-13.webp" data-gallery hidden><img src="img/gallery/car-13-thumb.webp" alt="Автомобил след почистване от Diamond Care 13" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-14.webp" data-gallery hidden><img src="img/gallery/car-14-thumb.webp" alt="Автомобил след почистване от Diamond Care 14" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-15.webp" data-gallery hidden><img src="img/gallery/car-15-thumb.webp" alt="Автомобил след почистване от Diamond Care 15" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-16.webp" data-gallery hidden><img src="img/gallery/car-16-thumb.webp" alt="Автомобил след почистване от Diamond Care 16" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-17.webp" data-gallery hidden><img src="img/gallery/car-17-thumb.webp" alt="Автомобил след почистване от Diamond Care 17" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-18.webp" data-gallery hidden><img src="img/gallery/car-18-thumb.webp" alt="Автомобил след почистване от Diamond Care 18" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-19.webp" data-gallery hidden><img src="img/gallery/car-19-thumb.webp" alt="Автомобил след почистване от Diamond Care 19" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-20.webp" data-gallery hidden><img src="img/gallery/car-20-thumb.webp" alt="Автомобил след почистване от Diamond Care 20" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-21.webp" data-gallery hidden><img src="img/gallery/car-21-thumb.webp" alt="Автомобил след почистване от Diamond Care 21" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-22.webp" data-gallery hidden><img src="img/gallery/car-22-thumb.webp" alt="Автомобил след почистване от Diamond Care 22" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-23.webp" data-gallery hidden><img src="img/gallery/car-23-thumb.webp" alt="Автомобил след почистване от Diamond Care 23" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-24.webp" data-gallery hidden><img src="img/gallery/car-24-thumb.webp" alt="Автомобил след почистване от Diamond Care 24" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-25.webp" data-gallery hidden><img src="img/gallery/car-25-thumb.webp" alt="Автомобил след почистване от Diamond Care 25" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-26.webp" data-gallery hidden><img src="img/gallery/car-26-thumb.webp" alt="Автомобил след почистване от Diamond Care 26" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-27.webp" data-gallery hidden><img src="img/gallery/car-27-thumb.webp" alt="Автомобил след почистване от Diamond Care 27" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-28.webp" data-gallery hidden><img src="img/gallery/car-28-thumb.webp" alt="Автомобил след почистване от Diamond Care 28" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-29.webp" data-gallery hidden><img src="img/gallery/car-29-thumb.webp" alt="Автомобил след почистване от Diamond Care 29" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-30.webp" data-gallery hidden><img src="img/gallery/car-30-thumb.webp" alt="Автомобил след почистване от Diamond Care 30" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-31.webp" data-gallery hidden><img src="img/gallery/car-31-thumb.webp" alt="Автомобил след почистване от Diamond Care 31" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-32.webp" data-gallery hidden><img src="img/gallery/car-32-thumb.webp" alt="Автомобил след почистване от Diamond Care 32" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-33.webp" data-gallery hidden><img src="img/gallery/car-33-thumb.webp" alt="Автомобил след почистване от Diamond Care 33" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-34.webp" data-gallery hidden><img src="img/gallery/car-34-thumb.webp" alt="Автомобил след почистване от Diamond Care 34" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-35.webp" data-gallery hidden><img src="img/gallery/car-35-thumb.webp" alt="Автомобил след почистване от Diamond Care 35" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-36.webp" data-gallery hidden><img src="img/gallery/car-36-thumb.webp" alt="Автомобил след почистване от Diamond Care 36" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-37.webp" data-gallery hidden><img src="img/gallery/car-37-thumb.webp" alt="Автомобил след почистване от Diamond Care 37" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-38.webp" data-gallery hidden><img src="img/gallery/car-38-thumb.webp" alt="Автомобил след почистване от Diamond Care 38" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-39.webp" data-gallery hidden><img src="img/gallery/car-39-thumb.webp" alt="Автомобил след почистване от Diamond Care 39" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-40.webp" data-gallery hidden><img src="img/gallery/car-40-thumb.webp" alt="Автомобил след почистване от Diamond Care 40" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-41.webp" data-gallery hidden><img src="img/gallery/car-41-thumb.webp" alt="Автомобил след почистване от Diamond Care 41" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-42.webp" data-gallery hidden><img src="img/gallery/car-42-thumb.webp" alt="Автомобил след почистване от Diamond Care 42" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-43.webp" data-gallery hidden><img src="img/gallery/car-43-thumb.webp" alt="Автомобил след почистване от Diamond Care 43" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-44.webp" data-gallery hidden><img src="img/gallery/car-44-thumb.webp" alt="Автомобил след почистване от Diamond Care 44" width="1200" height="1600" loading="lazy" decoding="async"></a>
+          <a class="gallery__item" href="img/gallery/car-45.webp" data-gallery hidden><img src="img/gallery/car-45-thumb.webp" alt="Автомобил след почистване от Diamond Care 45" width="1200" height="1600" loading="lazy" decoding="async"></a>
+        </div>
+        <div class="gallery__more">
+          <button type="button" class="btn btn--ghost btn--xl" data-gallery-more>Зареди още</button>
         </div>
       </div>
     </section>
@@ -345,5 +445,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </body>
 </html>
