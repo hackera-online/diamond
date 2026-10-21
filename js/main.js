@@ -9,7 +9,7 @@
   var count = document.getElementById("calc-count");
   var total = document.getElementById("calc-total");
   var note = document.getElementById("calc-note");
-  var sms = document.getElementById("calc-sms");
+  var viber = document.getElementById("calc-viber");
   var reset = document.getElementById("calc-reset");
 
   function fmt(n) {
@@ -37,9 +37,9 @@
 
     if (!lines.length) {
       note.textContent = "Отбележи услугите, които ти трябват";
-      sms.classList.add("is-disabled");
-      sms.setAttribute("aria-disabled", "true");
-      sms.removeAttribute("href");
+      viber.classList.add("is-disabled");
+      viber.setAttribute("aria-disabled", "true");
+      viber.removeAttribute("href");
       return;
     }
 
@@ -47,9 +47,9 @@
 
     var body = "Здравейте! Искам да запазя час за:\n" + lines.join("\n") +
       "\nОбщо: " + fmt(sum);
-    sms.classList.remove("is-disabled");
-    sms.removeAttribute("aria-disabled");
-    sms.setAttribute("href", "sms:" + PHONE + "?&body=" + encodeURIComponent(body));
+    viber.classList.remove("is-disabled");
+    viber.removeAttribute("aria-disabled");
+    viber.setAttribute("href", "viber://chat?number=" + encodeURIComponent(PHONE) + "&draft=" + encodeURIComponent(body));
   }
 
   items.forEach(function (el) {

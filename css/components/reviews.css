@@ -38,3 +38,6 @@
   .reviews__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; overflow: visible; margin-inline: 0; padding: 0; }
   .review { flex: none; }
 }
+@media (max-width: 560px) {
+  .reviews__list { margin-inline: -1rem; padding-inline: 1rem; scroll-padding-inline: 1rem; }
+}
