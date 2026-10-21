@@ -25,6 +25,8 @@
 │       ├── pack.css
 │       ├── steps.css
 │       ├── calculator.css
+│       ├── gallery.css
+│       ├── reviews.css
 │       └── footer.css
 └── js/
     └── main.js          (калкулатор, Viber линк)

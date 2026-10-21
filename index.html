@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/components/steps.css">
   <link rel="stylesheet" href="css/components/calculator.css">
   <link rel="stylesheet" href="css/components/gallery.css">
+  <link rel="stylesheet" href="css/components/reviews.css">
   <link rel="stylesheet" href="css/components/footer.css">
 
   <script type="application/ld+json">
@@ -55,6 +56,7 @@
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
     <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
     <symbol id="i-diamond" viewBox="0 0 24 24"><path d="M6 4h12l4 6-10 11L2 10z"/><path d="M2 10h20M9 4l-2 6 5 11 5-11-2-6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
     <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 1c.8 6 3 8.2 9 11-6 2.8-8.2 5-9 11-.8-6-3-8.2-9-11 6-2.8 8.2-5 9-11z"/></symbol>
   </svg>
 
@@ -397,6 +399,84 @@
         <div class="gallery__more">
           <button type="button" class="btn btn--ghost btn--xl" data-gallery-more>Зареди още</button>
         </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="reviews-title" class="brush">Отзиви</h2>
+          <p>Какво казват клиентите ни в Google.</p>
+        </div>
+        <div class="rating">
+          <span class="rating__score">5.0</span>
+          <div class="rating__info">
+            <div class="stars" role="img" aria-label="Оценка 5 от 5"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <span class="rating__meta">39 отзива в Google</span>
+          </div>
+        </div>
+        <ul class="reviews__list">
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Останах много доволен от услугата! Автомобилът беше изключително замърсен, но след над 3 часа старателна работа резултатът беше впечатляващ — изглеждаше като нов. Личи си вниманието към всеки детайл и професионалното отношение. Определено бих повторил и с удоволствие препоръчвам!</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">G</span>
+                <span><span class="review__name">Grigor Todorov</span><span class="review__src">Local Guide · Google</span></span>
+              </div>
+            </article>
+          </li>
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Много добро изпълнение! 👌 Най-якото е, че идва директно на място — супер удобно и без губене на време.</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">V</span>
+                <span><span class="review__name">Veselin Georgiev</span><span class="review__src">Local Guide · Google</span></span>
+              </div>
+            </article>
+          </li>
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Изключително съм доволна от услугата на Diamond Care Mobile Detailing! Професионално отношение, внимание към всеки детайл и перфектен краен резултат – автомобилът ми изглежда като нов.</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">M</span>
+                <span><span class="review__name">Mariana Kuzmova</span><span class="review__src">Google</span></span>
+              </div>
+            </article>
+          </li>
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Алекс се старае изключително много и се справи отлично. Отдели близо 2 часа докато колата не светна. Със сигурност бих ползвал повторно услугите му.</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">M</span>
+                <span><span class="review__name">Mario Tsonchev</span><span class="review__src">Google</span></span>
+              </div>
+            </article>
+          </li>
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Поздравления за старанието и отговорността, с които беше извършено почистването. Личи си, че работата е свършена с грижа и уважение към клиента. Автомобилът изглежда безупречно – чист, лъскав и почистен до най-малкия детайл.</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">R</span>
+                <span><span class="review__name">Rossi Iskrenova</span><span class="review__src">Google</span></span>
+              </div>
+            </article>
+          </li>
+          <li class="review">
+            <article class="review__card">
+              <div class="stars" role="img" aria-label="5 от 5 звезди"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <blockquote class="review__text">Много съм доволен, изключително професионално обслужване и перфектен резултат. Колата стана като нова! Препоръчвам!!</blockquote>
+              <div class="review__who">
+                <span class="review__avatar" aria-hidden="true">K</span>
+                <span><span class="review__name">Kaizer</span><span class="review__src">Google</span></span>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
 
