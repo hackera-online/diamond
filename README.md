@@ -1,6 +1,6 @@
 # Diamond Care - Мобилна автомивка и детайлинг
 
-Уебсайт за Diamond Care (Professional Car Care): ценоразпис с калкулатор на поръчката, Diamond Care Pack, SMS с избраните услуги.
+Уебсайт за Diamond Care (Professional Car Care): ценоразпис с калкулатор на поръчката, Diamond Care Pack, Viber съобщение с избраните услуги.
 
 ## Структура
 
@@ -27,7 +27,7 @@
 │       ├── calculator.css
 │       └── footer.css
 └── js/
-    └── main.js          (калкулатор, SMS линк)
+    └── main.js          (калкулатор, Viber линк)
 ```
 
 ## Промяна на цени
