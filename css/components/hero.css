@@ -2,7 +2,7 @@
 .hero__grid { display: grid; gap: 2rem; align-items: center; }
 @media (min-width: 900px) { .hero__grid { grid-template-columns: 1.1fr 0.9fr; gap: 3rem; } }
 
-.hero h1 { font-size: clamp(3rem, 9vw, 6.4rem); line-height: 0.98; margin-bottom: 1.5rem; }
+.hero h1 { font-size: clamp(1.9rem, 5.2vw, 3.4rem); line-height: 1.12; letter-spacing: 0.015em; max-width: 20ch; text-wrap: balance; margin-bottom: 1.4rem; }
 .hero__lead { max-width: 34rem; font-size: clamp(1.05rem, 1.4vw, 1.2rem); color: var(--color-muted); margin-bottom: 2rem; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; }
 
