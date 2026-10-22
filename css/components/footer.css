@@ -10,3 +10,13 @@
 
 .footer { padding-block: 1.5rem; font-size: 0.9rem; color: var(--color-muted); }
 .footer__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; }
+
+.footer__social { display: flex; gap: 1.2rem; }
+.footer__social a { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--color-cream); transition: color 0.2s var(--ease); }
+.footer__social a:hover { color: var(--color-red); }
+.footer__social .icon { width: 1.3rem; height: 1.3rem; }
+@media (max-width: 560px) { .footer__in { gap: 1rem; } .footer__social { justify-content: center; } }
+
+/* Известие за Viber поръчката */
+.toast { position: fixed; left: 50%; bottom: 6.5rem; z-index: 80; transform: translate(-50%, 1rem); max-width: min(92vw, 26rem); padding: 0.8rem 1.1rem; background: var(--color-cream); color: #111; font-weight: 700; font-size: 0.92rem; line-height: 1.35; text-align: center; border-radius: var(--radius-btn); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); opacity: 0; pointer-events: none; transition: opacity 0.25s var(--ease), transform 0.25s var(--ease); }
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
