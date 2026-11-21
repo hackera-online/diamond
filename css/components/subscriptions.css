@@ -1,0 +1,54 @@
+/* Месечни абонаменти: Silver / Gold / Diamond */
+.section--subs { border-top: 1px solid var(--color-line); background: radial-gradient(80% 60% at 50% 0%, var(--color-gold-wash), transparent 70%); }
+.section--subs .section__head { max-width: 46rem; }
+
+.subs { display: grid; gap: var(--space-5); align-items: stretch; }
+@media (min-width: 900px) { .subs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.sub { position: relative; display: flex; flex-direction: column; gap: var(--space-5); padding: clamp(1.5rem, 3vw, 2.25rem); border: 1px solid var(--color-line); border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); transition: transform var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease), box-shadow var(--dur-base) var(--ease); }
+.sub:hover { transform: translateY(-4px); border-color: var(--color-line-strong); box-shadow: var(--shadow-lift); }
+
+.sub__tier { display: flex; align-items: center; gap: var(--space-3); font-family: var(--font-display); font-size: var(--fs-lg); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--color-muted); }
+.sub__tier .icon { width: 1.3em; height: 1.3em; stroke-width: 1.5; }
+
+.sub__count { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(1.45rem, 2.1vw, 1.9rem); line-height: var(--lh-tight); color: var(--color-cream); white-space: nowrap; }
+.sub__count small { display: block; margin-top: var(--space-2); font-family: var(--font-sans); font-weight: 600; text-transform: none; font-size: var(--fs-sm); color: var(--color-muted); }
+
+.sub__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-2); padding-block: var(--space-4); border-block: 1px solid var(--color-line); font-family: var(--font-display); }
+.sub__amount { font-size: var(--fs-2xl); font-weight: 700; line-height: 1; color: var(--color-cream); }
+.sub__per { white-space: nowrap; font-family: var(--font-sans); font-size: var(--fs-sm); font-weight: 600; color: var(--color-muted); }
+.sub__each { margin-top: var(--space-2); flex-basis: 100%; width: fit-content; padding: var(--space-1) var(--space-3); border: 1px solid var(--color-line); border-radius: var(--radius-pill); font-family: var(--font-sans); font-size: var(--fs-xs); font-weight: 700; color: var(--color-cream); white-space: nowrap; }
+
+.sub__list { display: grid; gap: var(--space-3); font-size: var(--fs-sm); color: var(--color-cream); flex: 1; }
+.sub__list li { display: flex; gap: var(--space-3); align-items: baseline; }
+.sub__list li::before { content: ""; flex: none; width: 0.55rem; height: 0.55rem; background: var(--color-red); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+
+.sub .btn { width: 100%; }
+
+/* Silver */
+.sub--silver .sub__tier { color: var(--color-silver); }
+.sub--silver .sub__tier .icon { color: var(--color-silver); }
+
+/* Gold: водещ пакет */
+.sub--gold { border-color: var(--color-gold-line); background: var(--gradient-card-gold), var(--color-surface); }
+.sub--gold .sub__tier { color: var(--color-gold); }
+.sub--gold .sub__amount { color: var(--color-gold-light); }
+@media (max-width: 420px) { .sub__count { white-space: normal; } }
+@media (min-width: 900px) { .sub--gold { transform: translateY(-10px); box-shadow: var(--shadow-gold); } .sub--gold:hover { transform: translateY(-14px); } }
+
+/* Diamond: топ пакет */
+.sub--diamond { border-color: var(--color-red); background: var(--gradient-card-red), var(--color-surface); }
+.sub--diamond .sub__tier { color: var(--color-cream); }
+.sub--diamond .sub__tier .icon { color: var(--color-red); }
+
+.sub__badge { position: absolute; top: 0; right: var(--space-5); transform: translateY(-50%); padding: var(--space-1) var(--space-4); border-radius: var(--radius-pill); background: var(--gradient-gold); color: var(--color-on-gold); font-size: var(--fs-xs); font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; }
+.sub__badge--red { background: var(--color-red); color: var(--color-white); }
+
+/* Какво е включено във всички абонаменти */
+.subs-incl { margin-top: var(--space-7); padding: clamp(1.5rem, 3.5vw, 2.5rem); border: 1px dashed var(--color-gold-line); border-radius: var(--radius-card); background: var(--color-gold-wash); }
+.subs-incl__title { font-size: var(--fs-lg); color: var(--color-gold); margin-bottom: var(--space-5); display: flex; align-items: center; gap: var(--space-3); }
+.subs-incl__grid { display: grid; gap: var(--space-4) var(--space-6); }
+@media (min-width: 640px) { .subs-incl__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .subs-incl__grid { grid-template-columns: repeat(3, 1fr); } }
+.subs-incl__grid li { display: flex; gap: var(--space-3); align-items: center; font-weight: 600; }
+.subs-incl__grid .icon { color: var(--color-gold); }

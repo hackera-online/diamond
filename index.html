@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Diamond Care | Professional Car Care">
   <meta property="og:description" content="Ние идваме при вас, за да върнем блясъка, който автомобилът ви заслужава!">
-  <meta property="og:image" content="img/og-image.png">
+  <meta property="og:image" content="img/og-image.jpg">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/components/services.css">
   <link rel="stylesheet" href="css/components/pack.css">
   <link rel="stylesheet" href="css/components/packages.css">
+  <link rel="stylesheet" href="css/components/subscriptions.css">
   <link rel="stylesheet" href="css/components/steps.css">
   <link rel="stylesheet" href="css/components/calculator.css">
   <link rel="stylesheet" href="css/components/gallery.css">
@@ -39,7 +40,7 @@
     "description": "Професионален детайлинг и мобилна автомивка на ваш адрес.",
     "telephone": "+359876309783",
     "url": "https://diamondcaredetailing.com",
-    "image": "img/og-image.png",
+    "image": "img/og-image.jpg",
     "sameAs": ["https://www.facebook.com/profile.php?id=61581375230614", "https://www.instagram.com/diamondcaredetail/"],
     "areaServed": { "@type": "City", "name": "София" }
   }
@@ -72,6 +73,7 @@
       <nav class="nav" aria-label="Основна навигация">
         <a href="#prices">Цени</a>
         <a href="#packages">Пакети</a>
+        <a href="#subscriptions">Абонаменти</a>
         <a href="#gallery">Галерия</a>
         <a href="#how">Как работим</a>
         <a href="#contact">Контакти</a>
@@ -340,6 +342,82 @@
               Обади се
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscriptions" class="section section--subs" aria-labelledby="subs-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="subs-title" class="brush">Месечни абонаменти</h2>
+          <p>Редовна грижа на цена на почистване, по-ниска с всеки пакет. Всеки абонамент е съвкупност от няколко почиствания в рамките на месеца.</p>
+        </div>
+
+        <div class="subs">
+          <article class="sub sub--silver">
+            <p class="sub__tier"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Silver</p>
+            <h3 class="sub__count">2 почиствания<small>на месец</small></h3>
+            <p class="sub__price"><span class="sub__amount">80€</span><span class="sub__per">/ месец</span><span class="sub__each">40€ на почистване</span></p>
+            <ul class="sub__list">
+              <li>2 почиствания месечно</li>
+              <li>Подхранване на пластмасите</li>
+              <li>Подхранване на гумените елементи</li>
+              <li>Подхранване на кожата</li>
+              <li>Почистване на седалките</li>
+              <li>Други допълнителни услуги</li>
+            </ul>
+            <a class="btn btn--ghost btn--xl" href="tel:+359876309783">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-phone"/></svg>
+              Избери Silver
+            </a>
+          </article>
+          <article class="sub sub--gold">
+            <span class="sub__badge">Препоръчан</span>
+            <p class="sub__tier"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>Gold</p>
+            <h3 class="sub__count">3 почиствания<small>на месец</small></h3>
+            <p class="sub__price"><span class="sub__amount">115€</span><span class="sub__per">/ месец</span><span class="sub__each">≈ 38€ на почистване</span></p>
+            <ul class="sub__list">
+              <li>3 почиствания месечно</li>
+              <li>Подхранване на пластмасите</li>
+              <li>Подхранване на гумените елементи</li>
+              <li>Подхранване на кожата</li>
+              <li>Почистване на седалките</li>
+              <li>Други допълнителни услуги</li>
+            </ul>
+            <a class="btn btn--gold btn--xl" href="tel:+359876309783">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-phone"/></svg>
+              Избери Gold
+            </a>
+          </article>
+          <article class="sub sub--diamond">
+            <span class="sub__badge sub__badge--red">Най-изгодно на почистване</span>
+            <p class="sub__tier"><svg class="icon" aria-hidden="true"><use href="#i-diamond"/></svg>Diamond</p>
+            <h3 class="sub__count">4 почиствания<small>на месец</small></h3>
+            <p class="sub__price"><span class="sub__amount">135€</span><span class="sub__per">/ месец</span><span class="sub__each">≈ 34€ на почистване</span></p>
+            <ul class="sub__list">
+              <li>4 почиствания месечно</li>
+              <li>Подхранване на пластмасите</li>
+              <li>Подхранване на гумените елементи</li>
+              <li>Подхранване на кожата</li>
+              <li>Почистване на седалките</li>
+              <li>Други допълнителни услуги</li>
+            </ul>
+            <a class="btn btn--red btn--xl" href="tel:+359876309783">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-phone"/></svg>
+              Избери Diamond
+            </a>
+          </article>
+        </div>
+
+        <div class="subs-incl">
+          <h3 class="subs-incl__title"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Във всички абонаменти са включени</h3>
+          <ul class="subs-incl__grid">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Подхранване на пластмасите</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Подхранване на гумените елементи</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Подхранване на кожата</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Почистване на седалките</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>И други допълнителни услуги</li>
+          </ul>
         </div>
       </div>
     </section>

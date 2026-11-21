@@ -1,4 +1,4 @@
-.pack { margin-top: clamp(3rem, 7vw, 5rem); border: 1px solid var(--color-gold); border-radius: var(--radius-card); padding: clamp(1.5rem, 4vw, 3rem); background: radial-gradient(120% 90% at 100% 0%, rgba(200, 167, 98, 0.16), transparent 55%), var(--color-surface); }
+.pack { margin-top: clamp(3rem, 7vw, 5rem); border: 1px solid var(--color-gold); border-radius: var(--radius-card); padding: clamp(1.5rem, 4vw, 3rem); background: var(--gradient-card-gold), var(--color-surface); }
 .pack__head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-line); }
 .pack__title { display: flex; align-items: center; gap: 1rem; color: var(--color-gold); font-size: clamp(2rem, 6vw, 3.6rem); }
 .pack__title .icon { width: 1.1em; height: 1.1em; stroke-width: 1.4; }

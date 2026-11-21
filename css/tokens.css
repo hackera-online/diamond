@@ -1,22 +1,89 @@
+/* ==========================================================================
+   Diamond Care - design tokens
+   Единственият източник на цветове, шрифтове, размери, радиуси, сенки и
+   движение. Компонентите ползват само тези променливи.
+   ========================================================================== */
 :root {
-  /* Diamond Care brand (from the logo) */
-  --color-ink: #030409;          /* same as the logo background, so it blends in */
+  /* ---- Brand (от логото) ---- */
+  --color-ink: #030409;          /* фон като на логото, за да се слива */
   --color-surface: #0d0e14;
   --color-surface-2: #14151d;
-  --color-line: rgba(241, 232, 216, 0.14);
   --color-cream: #f1e8d8;
   --color-muted: #a9a398;
   --color-red: #e3131b;
   --color-red-deep: #a30d13;
   --color-gold: #c8a762;
+  --color-gold-light: #dcbf80;
+  --color-gold-deep: #9c7f3f;
+  --color-silver: #c9ced6;
   --color-white: #ffffff;
+  --color-on-gold: #1a1407;      /* текст върху златен фон */
+  --color-black: #000000;
 
+  /* ---- Semantic / прозрачности ---- */
+  --color-line: rgba(241, 232, 216, 0.14);
+  --color-line-strong: rgba(241, 232, 216, 0.28);
+  --color-gold-line: rgba(200, 167, 98, 0.45);
+  --color-gold-wash: rgba(200, 167, 98, 0.12);
+  --color-red-wash: rgba(227, 19, 27, 0.1);
+  --color-overlay: rgba(3, 4, 9, 0.94);
+  --color-glass: rgba(13, 14, 20, 0.97);
+
+  /* ---- Gradients ---- */
+  --gradient-gold: linear-gradient(135deg, var(--color-gold-light), var(--color-gold) 55%, var(--color-gold-deep));
+  --gradient-card-gold: radial-gradient(120% 90% at 100% 0%, rgba(200, 167, 98, 0.16), transparent 55%);
+  --gradient-card-red: radial-gradient(120% 90% at 100% 0%, rgba(227, 19, 27, 0.12), transparent 55%);
+
+  /* ---- Typography ---- */
   --font-display: 'Oswald', 'Arial Narrow', Impact, sans-serif;
   --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: clamp(1.7rem, 3.2vw, 2.5rem);
+  --fs-2xl: clamp(2.4rem, 5vw, 3.6rem);
+
+  --lh-tight: 1.05;
+  --lh-base: 1.55;
+  --tracking-display: 0.01em;
+  --tracking-label: 0.14em;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+  --section-y: clamp(3.5rem, 8vw, 6rem);
+
+  /* ---- Layout ---- */
   --container-max: 1200px;
   --header-h: 68px;
+
+  /* ---- Radius ---- */
   --radius-btn: 6px;
   --radius-card: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-card: 0 1px 0 rgba(241, 232, 216, 0.05) inset, 0 18px 40px -22px rgba(0, 0, 0, 0.8);
+  --shadow-lift: 0 28px 60px -24px rgba(0, 0, 0, 0.9);
+  --shadow-gold: 0 24px 60px -28px rgba(200, 167, 98, 0.55);
+
+  /* ---- Motion ---- */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.2s;
+  --dur-base: 0.35s;
+
+  /* ---- Z-index ---- */
+  --z-calc: 40;
+  --z-header: 50;
+  --z-skip: 100;
+  --z-lightbox: 1000;
 }
